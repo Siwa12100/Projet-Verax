@@ -1,0 +1,14 @@
+﻿<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <CascadingAuthenticationState>
+            <VeraxShield.pages.erreurs.ErreurParDefaut/>
+
+        </CascadingAuthenticationState>
+    </NotFound>
+</Router>
+
+
+

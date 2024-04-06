@@ -1,0 +1,23 @@
+{
+    "name": "allaurent13/php",
+    "autoload": {
+        "psr-4": {
+            "modele\\" : "modele/",
+            "services\\" :"services/",
+            "Config\\" : "config/",
+            "controleur\\" : "controleur/",
+            "dal\\" : "dal/",
+            "dal\\gateways\\" : "dal/gateways/",
+            "metier\\" : "metier/",
+            "json_output\\" : "json_output/",
+            "modele\\manager\\" : "modele/manager" 
+        }
+    },
+    "require": {
+        "twig/twig": "^3.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "scripts": {
+        "dev" : "php -S localhost:8080"
+    }
+}
